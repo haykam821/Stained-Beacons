@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "io.github.haykam821.stainedbeacons.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": [
+		"BlockEntityTypeBuilderMixin",
+		"ContainerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

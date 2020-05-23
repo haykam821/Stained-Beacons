@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "stainedbeacons",
+	"version": "1.0.0",
+	"name": "Stained Beacons",
+	"description": "Adds stained beacons to Minecraft.",
+	"authors": [
+		"haykam821"
+	],
+	"contact": {
+		"homepage": "https://github.com/haykam821/Stained-Beacons#readme",
+		"issues": "https://github.com/haykam821/Stained-Beacons/issues"
+	},
+	"entrypoints": {
+		"main": [
+			"io.github.haykam821.stainedbeacons.Main"
+		],
+		"client": [
+			"io.github.haykam821.stainedbeacons.ClientMain"
+		]
+	},
+	"mixins": [
+		"stainedbeacons.mixin.json"
+	],
+	"license": "MIT",
+	"icon": "assets/stainedbeacons/icon.png",
+	"depends": {
+		"fabricloader": ">=0.4.0"
+	}
+}

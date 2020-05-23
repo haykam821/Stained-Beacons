@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "stainedbeacons:stained_beacon",
+	"pattern": [
+		"ggg",
+		"gng",
+		"ooo"
+	],
+	"key": {
+		"g": {
+			"item": "minecraft:white_stained_glass"
+		},
+		"n": {
+			"item": "minecraft:nether_star"
+		},
+		"o": {
+			"item": "minecraft:obsidian"
+		}
+	},
+	"result": {
+		"item": "stainedbeacons:white_stained_beacon"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "block/beacon",
+	"textures": {
+		"glass": "block/light_gray_stained_glass"
+	}
+}
