@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "stainedbeacons",
-	"version": "1.0.0",
+	"version": "${version}",
 	"name": "Stained Beacons",
 	"description": "Adds stained beacons to Minecraft.",
 	"authors": [
