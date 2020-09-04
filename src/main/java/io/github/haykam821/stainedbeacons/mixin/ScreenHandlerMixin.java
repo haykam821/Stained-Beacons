@@ -8,14 +8,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import io.github.haykam821.stainedbeacons.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.container.BlockContext;
-import net.minecraft.container.Container;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.ScreenHandlerContext;
 
-@Mixin(Container.class)
-public class ContainerMixin {
+@Mixin(ScreenHandler.class)
+public class ScreenHandlerMixin {
 	@Inject(method = "canUse", at = @At("HEAD"), cancellable = true)
-	private static void canUse(BlockContext context, PlayerEntity player, Block target, CallbackInfoReturnable<Boolean> ci) {
+	private static void canUse(ScreenHandlerContext context, PlayerEntity player, Block target, CallbackInfoReturnable<Boolean> ci) {
 		if (target == Blocks.BEACON) {
 			ci.setReturnValue(context.run((world, blockPos) -> {
 				Block block = world.getBlockState(blockPos).getBlock();
